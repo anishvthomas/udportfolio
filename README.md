@@ -1,5 +1,14 @@
 ## Website Performance Optimization portfolio project
 
+1. Changed the following for Google Pagespeed Insights
+indexwithcomments.html has the comments which show where changes were done
+1:Added caching
+2:Speeding up google font load
+3:Inlined css
+4:Added async for analytics.js
+5:minified image pizzeria.jpg
+6:minified html
+
 Your challenge, if you wish to accept it (and we sure hope you will), is to optimize this online portfolio for speed! In particular, optimize the critical rendering path and make this page render as quickly as possible by applying the techniques you've picked up in the [Critical Rendering Path course](https://www.udacity.com/course/ud884).
 
 To get started, check out the repository, inspect the code,

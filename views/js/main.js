@@ -516,10 +516,10 @@ function updatePositions() {
 
   var items = document.getElementsByClassName('mover');
   //Moved outside of loop to avoid FSL
-  var phaseScrollTop = Math.sin(document.body.scrollTop / 1250);
-  
+  var phaseScrollTop = document.body.scrollTop / 1250;
   for (var i = 0; i < items.length; i++) {
-    var phase = phaseScrollTop + (i % 5);
+    var phase = Math.sin(phaseScrollTop + (i % 5));
+
     items[i].style.left = items[i].basicLeft + 100 * phase + 'px';
   }
 
